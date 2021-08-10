@@ -43,6 +43,10 @@
     padding-left: 74px;
     padding-right: 74px;
   }
+
+  .team-items {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
 }
 
 @media (min-width: 1200px) {

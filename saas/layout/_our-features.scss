@@ -42,7 +42,6 @@
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0auto;
   }
 
   .icon-group {
@@ -57,12 +56,13 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  .container {
-    width: 768px;
+@media (min-width: 480px) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0auto;
+    margin: 0 auto;
   }
 
   .icon-group {
@@ -84,16 +84,29 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
+  // .feature-container {
+  //   max-width: 1199px;
+  // }
   .features-list {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    // flex-wrap: wrap;
+    // column-count: 2;
+    // max-width: 738px;
   }
   .feature-items {
     width: 354px;
   }
   .feature-items:nth-child(odd) {
     margin-right: 30px;
+  }
+
+  .icon-group {
+    max-width: 354px;
   }
 }
 
